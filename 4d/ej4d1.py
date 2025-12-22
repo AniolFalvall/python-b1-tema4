@@ -35,10 +35,14 @@ Exemple:
 """
 
 def sum():
-    # Write here your code
+    first_number = int(input("Insert the first number: "))
+    second_number = int(input("Insert the second number: "))
+    sum = first_number + second_number
+    print("Result:", sum)
+    return sum
     pass
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# sum()
+sum()
