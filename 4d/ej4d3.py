@@ -52,7 +52,15 @@ Exemple:
 """
 
 def read_and_write():
-    # Write here your code
+    name = str(input("Insert your name: "))
+    age = int(input("Insert your age: "))
+
+    with open("file.txt", "w") as file:
+        file.write(name + "\n")
+        file.write(str(age))
+
+    with open("file.txt", "r") as file:
+        print(file.read())
     pass
 
 
